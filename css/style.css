@@ -83,11 +83,10 @@ input, button, textarea, select {
 }
 
 .header-section {
-  height: 100vh;
+  min-height: 710px;
   background-image: url("../img/bg.jpg");
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .header-section .header {
   padding: 50px 0 100px 50px;
@@ -115,4 +114,8 @@ input, button, textarea, select {
 }
 .header-section .concept-art__button {
   margin: 50px 0 135px 0;
+}
+
+.about-course-section {
+  min-width: 100%;
 }/*# sourceMappingURL=style.css.map */
