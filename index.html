@@ -17,7 +17,7 @@
         <header class="header">
             <img class="header__logo" src="img/icons/Logo.svg" alt="Logo">
         </header>
-        <div class="concept-art limit-conteiner">
+        <div class="concept-art limit-container">
             <h2 class="concept-art__title">КОНЦЕПТ АРТ</h2>
             <p class="concept-art__subtitle">Научись мыслить, как концепт-художник, придумывать 
                 и воплощать в жизнь оригинальные идеи</p>
@@ -26,18 +26,44 @@
     </section>
 
     <section class="about-course-section">
-        <div class="limit-container">
-            <div><img src="img/white-robot.png" alt="white-robot"></div>
-            <div>
-                <h3>О чем курс?</h3>
-                <p>На курсе по концепт-арту вы научитесь создавать различные изображения - предметы,
+        <div class="about-course-wrapper about-course limit-container">
+            <div class="about-course__image"><img src="img/white-robot.png" alt="white-robot"></div>
+            <div class="about-course__text">
+                <h3 class="about-course__title title">О чем курс?</h3>
+                <p class="about-course__subtitle">На курсе по концепт-арту вы научитесь создавать различные изображения - предметы,
                     персонажей и окружения.</p>
-                <p>Разработка концепта научит вас реализовывать собственные задумки, выстраивать 
+                <p class="about-course__redsubtitle">Разработка концепта научит вас реализовывать собственные задумки, выстраивать 
                     алгоритм для достижения поставленной цели и ориентироваться на результат
                 </p>
             </div>
         </div>
     </section>
+
+    <section class="study-stages-section">
+        <div class="study-stages limit-container">
+            <h3 class="study-stages__title title centered">Чему ты научишься?</h3>
+            <div class="study-stages-wrapper">
+                <div class="study-stages__stage">
+                    <div class="study-stages__number"><span>1</span></div>
+                    <p class="study-stages__text">С нуля создавать стилизованные 3D-модели архитектуры, 
+                        окружения и персонажей</p>
+                </div>
+                <div class="study-stages__stage">
+                    <div class="study-stages__number"><span>2</span></div>
+                    <p class="study-stages__text">Настраивать базовые материалы создавать простые текстуры</p>
+                </div>
+                <div class="study-stages__stage">
+                    <div class="study-stages__number"><span>3</span></div>
+                    <p class="study-stages__text">Настраивать сцену, освещение и камеру для рендеринга</p>
+                </div>
+                <div class="study-stages__stage">
+                    <div class="study-stages__number"><span>4</span></div>
+                    <p class="study-stages__text">Создавать анимацию разной сложности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/script.js"></script>
