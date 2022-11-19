@@ -211,7 +211,7 @@
                 <input class="contact-form__email" placeholder="Ваш E-mail:" type="email" name="" id="">
                 <input class="contact-form__button" type="submit" value="Получить доступ">
                 <label class="contact-form__check-box-wrapper">
-                    <input class="contact-form__checkbox" type="checkbox" name="" id="" required="true">
+                    <input class="contact-form__checkbox" type="checkbox" required="true" oninvalid="this.setCustomValidity('Сначала поставьте галочку')" oninput="setCustomValidity('')">
                     <label>
                         Даю <a href="#">согласие</a> на <a href="#">обработку персональных данных</a>, 
                         а также ознакомлен с <a href="#">публичной офертой</a> и <a href="#">тарифами</a></label>
