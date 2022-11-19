@@ -109,7 +109,7 @@ $buttonOrange: #E2521D;
         &__title {
             margin-bottom: 80px;
         }
-        &__subtitle {
+        &__red-text {
             font-family: 'Gotham Pro';
             font-style: normal;
             font-weight: 400;
@@ -118,7 +118,7 @@ $buttonOrange: #E2521D;
             color: $buttonOrange;
             margin-bottom: 40px;
         }
-        &__redsubtitle {
+        &__grey-text {
             font-family: 'Gotham Pro';
             font-style: normal;
             font-weight: 400;
@@ -257,3 +257,227 @@ $buttonOrange: #E2521D;
     }
 }
 
+.for-who-section {
+    padding-top: 110px;
+    .for-who {
+        margin: 0 auto;
+        padding: 150px 5% 150px 0;
+        max-width: 1370px;
+        display: flex;
+        justify-content: end;
+        background-image: url("../img/bg-2.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        &-text-wrapper {
+            max-width: 45%;
+        }
+        &__red-text {
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 52px;
+            color: $buttonOrange;
+            margin-bottom: 50px;
+        }
+        &__grey-text {
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 34px;
+            color: #8997AB;
+        }
+    }
+}
+
+.how-it-goes-section {
+    .how-it-goes__title {
+        padding-bottom: 45px;
+    }
+    .how-it-goes-wrapper {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .course-part {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 48%;
+        padding-bottom: 60px;
+        &__title {
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+        &__subtitle {
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 34px;
+            color: #8997AB;
+        }
+    }
+    .sign-up {
+        &__button {
+            cursor: pointer;
+            background-color: $buttonOrange;
+            padding: 60px 0;
+            width: 100%;
+            border: none;
+        }
+        &__sign {
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 22px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+        }
+        &__monthes {
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 34px;
+            color: #FFFFFF;
+        }
+        .benefits {
+            margin: 0 auto;
+            padding: 30px 0;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .benefit {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-family: 'Gotham Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 34px;
+            color: #FFFFFF;
+            &__text {
+                width: 70%;
+            }
+        }
+        &__line {
+            width: 85%;
+            border: none;
+            border-top: 1px solid #706470;
+        }
+    }
+}
+
+.contact-us-section {
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        &__sale {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #F54B31;
+        }
+        &__sale-text {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 140%;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        &__red {
+            color: #FA4682;
+        }
+        &__grey {
+            color: #FFFFFF80;
+        }
+        &__fill-form {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    .contact-form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        &__email {
+            width: 100%;
+            background: #393C57;
+            border: 1px solid #E2521D;
+            border-radius: 8px;
+            padding: 20px 30px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+        &__email::placeholder {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+        &__button {
+            cursor: pointer;
+            padding: 15px 0;
+            width: 100%;
+            background: $buttonOrange;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 21px;
+            line-height: 140%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+        }
+
+        &__check-box-wrapper {
+            display: flex;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #ffffff99;
+            gap: 15px;
+        }
+
+        &__check-box:checked {
+            color: red;
+        }
+    }
+
+}

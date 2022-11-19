@@ -143,7 +143,7 @@ input, button, textarea, select {
 .about-course-section .about-course__title {
   margin-bottom: 80px;
 }
-.about-course-section .about-course__subtitle {
+.about-course-section .about-course__red-text {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
@@ -152,7 +152,7 @@ input, button, textarea, select {
   color: #E2521D;
   margin-bottom: 40px;
 }
-.about-course-section .about-course__redsubtitle {
+.about-course-section .about-course__grey-text {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
@@ -280,4 +280,236 @@ input, button, textarea, select {
   font-size: 18px;
   line-height: 34px;
   color: #8997AB;
+}
+
+.for-who-section {
+  padding-top: 110px;
+}
+.for-who-section .for-who {
+  margin: 0 auto;
+  padding: 150px 5% 150px 0;
+  max-width: 1370px;
+  display: flex;
+  justify-content: end;
+  background-image: url("../img/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+.for-who-section .for-who-text-wrapper {
+  max-width: 45%;
+}
+.for-who-section .for-who__red-text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 52px;
+  color: #E2521D;
+  margin-bottom: 50px;
+}
+.for-who-section .for-who__grey-text {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #8997AB;
+}
+
+.how-it-goes-section .how-it-goes__title {
+  padding-bottom: 45px;
+}
+.how-it-goes-section .how-it-goes-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.how-it-goes-section .course-part {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 48%;
+  padding-bottom: 60px;
+}
+.how-it-goes-section .course-part__title {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.how-it-goes-section .course-part__subtitle {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #8997AB;
+}
+.how-it-goes-section .sign-up__button {
+  cursor: pointer;
+  background-color: #E2521D;
+  padding: 60px 0;
+  width: 100%;
+  border: none;
+}
+.how-it-goes-section .sign-up__sign {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.how-it-goes-section .sign-up__monthes {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+.how-it-goes-section .sign-up .benefits {
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.how-it-goes-section .sign-up .benefit {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+.how-it-goes-section .sign-up .benefit__text {
+  width: 70%;
+}
+.how-it-goes-section .sign-up__line {
+  width: 85%;
+  border: none;
+  border-top: 1px solid #706470;
+}
+
+.contact-us-section .contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.contact-us-section .contact-us__sale {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #F54B31;
+}
+.contact-us-section .contact-us__sale-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-align: center;
+}
+.contact-us-section .contact-us__red {
+  color: #FA4682;
+}
+.contact-us-section .contact-us__grey {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.contact-us-section .contact-us__fill-form {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.contact-us-section .contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.contact-us-section .contact-form__email {
+  width: 100%;
+  background: #393C57;
+  border: 1px solid #E2521D;
+  border-radius: 8px;
+  padding: 20px 30px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.contact-us-section .contact-form__email::-moz-placeholder {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.contact-us-section .contact-form__email:-ms-input-placeholder {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.contact-us-section .contact-form__email::placeholder {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.contact-us-section .contact-form__button {
+  cursor: pointer;
+  padding: 15px 0;
+  width: 100%;
+  background: #E2521D;
+  border: none;
+  border-radius: 8px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.contact-us-section .contact-form__check-box-wrapper {
+  display: flex;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.6);
+  gap: 15px;
+}
+.contact-us-section .contact-form__check-box:checked {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
