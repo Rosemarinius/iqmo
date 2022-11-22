@@ -54,6 +54,11 @@ input, button, textarea, select {
   max-width: 1070px;
   margin: 0 auto;
 }
+@media (min-width: 1920px) {
+  .limit-container {
+    max-width: 1440px;
+  }
+}
 @media (max-width: 1070px) {
   .limit-container {
     padding: 0 15px;
@@ -64,13 +69,28 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 62px;
   color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .title {
+    padding: 0 10px;
+    font-size: 1.875rem;
+  }
 }
 
 .centered {
   text-align: center;
+}
+
+.style-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.style-link:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -78,13 +98,18 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.563rem;
   line-height: 40px;
   background: #E2521D;
   border: none;
   box-shadow: 0px 0px 55px rgba(202, 0, 80, 0.51);
   border-radius: 10px;
   padding: 20px 70px;
+}
+@media (max-width: 768px) {
+  .button {
+    padding: 14px 50px;
+  }
 }
 
 .none {
@@ -96,11 +121,27 @@ input, button, textarea, select {
 }
 
 .header-section {
-  min-height: 710px;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: right;
+}
+@media (min-width: 1920px) {
+  .header-section {
+    padding: 0 15px;
+    background-position: center;
+  }
+}
+@media (max-width: 1070px) {
+  .header-section {
+    padding: 0 15px;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .header-section {
+    background-position: 80%;
+  }
 }
 .header-section .header {
   padding: 50px 0 100px 50px;
@@ -110,7 +151,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 4.375rem;
   line-height: 65px;
   letter-spacing: -2.5px;
   text-transform: uppercase;
@@ -122,7 +163,7 @@ input, button, textarea, select {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   color: #FFFFFF;
 }
@@ -147,7 +188,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.563rem;
   line-height: 40px;
   color: #E2521D;
   margin-bottom: 40px;
@@ -156,7 +197,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #8997AB;
 }
@@ -171,6 +212,7 @@ input, button, textarea, select {
 .study-stages-section .study-stages-wrapper {
   padding-top: 75px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .study-stages-section .study-stages__stage {
@@ -186,7 +228,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.563rem;
   line-height: 68px;
   text-align: center;
   color: #E2521D;
@@ -215,7 +257,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #FFFFFF;
 }
@@ -248,7 +290,7 @@ input, button, textarea, select {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.938rem;
   line-height: 18px;
 }
 .programm-section .programm__section-name span {
@@ -261,7 +303,7 @@ input, button, textarea, select {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   overflow: hidden;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -277,7 +319,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #8997AB;
 }
@@ -303,7 +345,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.563rem;
   line-height: 52px;
   color: #E2521D;
   margin-bottom: 50px;
@@ -312,7 +354,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #8997AB;
 }
@@ -330,14 +372,14 @@ input, button, textarea, select {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 48%;
+  width: 45%;
   padding-bottom: 60px;
 }
 .how-it-goes-section .course-part__title {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 1.438rem;
   line-height: 22px;
   color: #FFFFFF;
 }
@@ -345,7 +387,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #8997AB;
 }
@@ -360,7 +402,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 1.438rem;
   line-height: 22px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -370,7 +412,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #FFFFFF;
 }
@@ -388,7 +430,7 @@ input, button, textarea, select {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #FFFFFF;
 }
@@ -402,6 +444,7 @@ input, button, textarea, select {
 }
 
 .contact-us-section .contact-us {
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -411,7 +454,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 120%;
   text-align: center;
   letter-spacing: 0.01em;
@@ -421,7 +464,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   color: #FFFFFF;
   text-align: center;
@@ -436,7 +479,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
@@ -457,7 +500,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 120%;
   color: #FFFFFF;
 }
@@ -465,7 +508,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 120%;
   color: #FFFFFF;
 }
@@ -473,7 +516,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 120%;
   color: #FFFFFF;
 }
@@ -481,7 +524,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 120%;
   color: #FFFFFF;
 }
@@ -495,7 +538,7 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
-  font-size: 21px;
+  font-size: 1.313rem;
   line-height: 140%;
   letter-spacing: 0.04em;
   color: #FFFFFF;
@@ -505,11 +548,199 @@ input, button, textarea, select {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.6);
   gap: 15px;
 }
 .contact-us-section .contact-form__check-box:checked {
   color: red;
+}
+
+.footer-section .footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 200%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+.footer-section .footer .copyright {
+  font-weight: 400;
+}
+.footer-section .footer .pay-secure-info {
+  font-weight: 600;
+}
+.footer-section .footer .pay-secure-info .pay__images {
+  display: flex;
+  gap: 30px;
+}
+.footer-section .footer .pay-secure-info .secure__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .about-course-section .about-course {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-course-section .about-course__text {
+    width: 80%;
+  }
+  .study-stages-section .study-stages-wrapper {
+    gap: 20px;
+  }
+  .study-stages-section .study-stages__stage {
+    width: 45%;
+    margin-bottom: 60px;
+  }
+  .for-who-section {
+    padding-top: 110px;
+  }
+  .for-who-section .for-who {
+    background-image: none;
+    justify-content: center;
+  }
+  .for-who-section .for-who-text-wrapper {
+    text-align: center;
+    max-width: 80%;
+  }
+  .how-it-goes-section .sign-up .benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .how-it-goes-section .sign-up .benefit {
+    justify-content: center;
+    width: 80%;
+  }
+  .footer-section .footer {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header-section .header {
+    padding: 18px 0 100px 18px;
+  }
+  .header-section .concept-art__title {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .header-section .concept-art__subtitle {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+  .header-section .concept-art__button {
+    font-size: 0.75rem;
+    margin: 50px 0 88px 0;
+  }
+  .about-course-section {
+    width: 100%;
+  }
+  .about-course-section .about-course {
+    display: flex;
+    gap: 50px;
+  }
+  .about-course-section .about-course__text {
+    width: 90%;
+  }
+  .about-course-section .about-course__title {
+    font-size: 1.875rem;
+  }
+  .about-course-section .about-course__red-text {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+  }
+  .about-course-section .about-course__grey-text {
+    font-size: 0.875rem;
+  }
+  .study-stages-section .study-stages-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+  .study-stages-section .study-stages__stage {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+  .study-stages-section .study-stages__text {
+    font-size: 0.875rem;
+  }
+  .programm-section .programm__section {
+    padding: 25px 10px;
+  }
+  .programm-section .programm__section-name {
+    font-size: 0.813rem;
+  }
+  .programm-section .programm__section-close {
+    width: 25px;
+    height: 25px;
+    font-size: 0.938rem;
+  }
+  .programm-section .programm__list-block {
+    font-size: 0.875rem;
+  }
+  .for-who-section .for-who {
+    padding: 70px 0;
+  }
+  .for-who-section .for-who-text-wrapper {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  .for-who-section .for-who__red-text {
+    font-size: 1.125rem;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .for-who-section .for-who__grey-text {
+    font-size: 0.875rem;
+    line-height: 28px;
+  }
+  .how-it-goes-section .how-it-goes-wrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-it-goes-section .course-part {
+    width: 90%;
+  }
+  .how-it-goes-section .course-part__title {
+    font-size: 1.438rem;
+  }
+  .how-it-goes-section .course-part__subtitle {
+    font-size: 0.875rem;
+    line-height: 28px;
+  }
+  .how-it-goes-section .sign-up__button {
+    padding: 40px 0;
+  }
+  .how-it-goes-section .sign-up__sign {
+    font-size: 1.25rem;
+  }
+  .how-it-goes-section .sign-up__monthes {
+    font-size: 0.875rem;
+  }
+  .how-it-goes-section .sign-up .benefits {
+    align-items: center;
+  }
+  .how-it-goes-section .sign-up .benefit {
+    font-size: 0.875rem;
+    justify-content: center;
+  }
+  .how-it-goes-section .sign-up .benefit__text {
+    width: 70%;
+  }
+  .contact-us-section .contact-form {
+    width: 95%;
+  }
+  .footer-section .footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=style.css.map */
